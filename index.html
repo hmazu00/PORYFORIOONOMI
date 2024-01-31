@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ONOMI ART</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css"
+/>
+<link rel="stylesheet" href="animate.min.css" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+<a>MY ART WORKS</a>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">TOP</a></li>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+</ul>
+</nav>
+
+<h2>＼　WELCOME TO MY GALLERY　／</h2>
+
+<h1>ART WORKS</h1>
+
+<div>
+<article>
+<div class="scrollBox inview fadeIn">
+<ul>
+<li>
+<a href="ebi.html">
+	<figure>
+	<img src=img/ebi.jpg alt=エビ>
+	</figure>
+</a>
+	<h2>エビ</h2>
+</li>
+
+<li>
+<a href="karubi.html">
+	<figure>
+	<img src=img/karubi.jpg alt=賛美カルビ>
+	</figure>
+</a>
+	<h2>賛美カルビ</h2>
+</li>
+
+<li>
+<a href="gyutan.html">
+	<figure>
+	<img src=img/gyutan.jpg alt=一旦牛タン>
+	</figure>
+</a>
+	<h2>一旦牛タン</h2>
+</li>
+
+<li>
+<a href="unmei.html">
+	<figure>
+	<img src=img/unmei.jpg alt=運命>
+	</figure>
+</a>
+	<h2>運命</h2>
+
+</li>
+
+<li>
+<a href="yummy.html">
+	<figure>
+	<img src=img/yummy.png alt=YUMMY>
+	</figure>
+</a>
+	<h2>YUMMY</h2>
+</li>
+
+<li>
+<a href="harapeko.html">
+	<figure>
+	<img src=img/harapeko.jpg alt=はらぺこ>
+	</figure>
+</a>
+	<h2>はらぺこ</h2>
+</li>
+
+<style>
+    .fadeIn {
+      opacity: 0;
+      transition: 2s;
+      /* transitionは表示するまでの時間 2sだと2秒 */
+    }
+    .fadeIn.is-show {
+      opacity: 1;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+  <script>
+    $(function(){
+      $(".inview").on("inview", function (event, isInView) {
+        if (isInView) {
+          $(this).stop().addClass("is-show");
+        }
+      });
+    });
+  </script>
+</head>
+
+</ul>
+</div>
+</article>
+</div>
+
+<footer>
+©SAKUHINGUN
+</footer>
+</body>
+</html>
